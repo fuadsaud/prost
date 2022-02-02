@@ -10,3 +10,10 @@ pom.xml.asc
 .lein-plugins/
 .lein-failures
 .nrepl-port
+
+cljs-test-runner-out/
+out/
+.cpcache
+public
+.shadow-cljs
+.cljs_node_repl

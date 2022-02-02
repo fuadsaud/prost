@@ -1,0 +1,22 @@
+{:deps {:aliases [:shadow-cljs]}
+
+ :dev-http {8000 "out"}
+
+ :builds
+ {:dev
+  {:target :node-script
+   :output-dir "out/dev"
+   :main prost.core}
+
+  :browser
+  {:target :browser
+   :output-dir "out/browser"
+   :modules {:dev {:entries [prost.core]}}}
+
+  :test
+  {:target :node-test
+   :output-dir "out/browser"
+   :ns-regexp "-test$"
+   :autorun true}}}
+
+(js/console.log "foo")
